@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KamdiRx</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <style>
+       body{ font-family:'Segoe UI'; font-weight: 500;
+        color: white; background-color:#04265a;
+       } 
+       .navbar-brand{color: white;}
+       .nav-link{color: white;}
+       .navbar-nav .nav-item .active{color: #2273ed;}
+       ul{
+        font-size: larger; 
+       }
+
+       #hero-section{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(Pharm2.jpg)no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+}
+
+.navbar-nav .nav-link:hover{
+    color:  #2273ed;
+    border-bottom: 2px solid  #2273ed;
+}
+
+.call-to-action{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(Pharm1.jpg)no-repeat;
+    background-position: center;
+    background-size: cover;
+    height:550px;
+    background-attachment: fixed;
+}
+
+.navbar-nav .nav-item .active{
+    color: #2273ed;
+    border-bottom: 2px solid #2273ed;
+}
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="navbar">
+    <nav class="navbar navbar-expand-lg  sticky-top" style="background-color: #06367e;">
+        <div class="container">
+            <a href="" class="navbar-brand fs-2 text-light" style="font-family:Franklin;">KAMDI  <span style="font-size:2.5rem;color: #307ff7; font-family:italic;"><i>RX</i></span></h2></a>
+            <button class="navbar-toggler text-dark bg-light" data-bs-target="#mynavbar" data-bs-toggle="collapse"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse text-center" id="mynavbar">
+                <ul class="navbar-nav mx-auto fw-bolder ">
+                    <li class="nav-item">
+                        <a href="#hero-section" class="nav-link">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#About"  class="nav-link">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#Services"  class="nav-link">Services</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#Testimonials"  class="nav-link">Testimonials</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#FAQ"  class="nav-link">FAQ</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#Team" class="nav-link">Team</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#Contact" class="nav-link">Contact</a>
+                    </li>
+                    <div class="col-sm-6 my-2">
+                    <button class="btn btn-outline-light rounded-pill ms-5 px-4" type="button" data-bs-toggle="modal" data-bs-target="#modalReg">Register</button>
+                    <button class="btn btn-outline-light rounded-pill ms-2 px-4" type="button" data-bs-toggle="modal" data-bs-target="#modalLog">Login</button>
+                    </div>
+                </ul>
+            </div> 
+    </nav>
+
+
+
+    <div class="container">
+         <div class="modal fade " id="modalReg">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content col-sm-6">
+                        <div class="modal-header " style="background-color: #06367e;">
+                            <h2 class="text-light" style="font-family:Franklin;" >KAMDI  <span  style="font-size:2.5rem; font-size:2.5rem;color: #307ff7; font-family:italic;
+                            "><i>RX</i></span></h2>
+                            <button class="btn-close text-light bg-light" type="button" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body " style="background-color: #06367e;">
+                            <form action="" class="rounded-5">
+                                <div class="py-1 px-5">
+                                        <div class="mb-3">
+                                            <label for="" class="form-label text-light">First Name</label>
+                                            <input type="text" class="form-control rounded-4" placeholder="Enter your first name">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="" class="form-label text-light">Last Name</label>
+                                            <input type="text" class="form-control rounded-4" placeholder="Enter your last name">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="" class="form-label text-light">Email</label>
+                                            <input type="email" class="form-control rounded-4" placeholder="Enter your email address">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="" class="form-label text-light">Password</label>
+                                            <input type="password" class="form-control rounded-4" placeholder="Choose a strong password">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="" class="form-label text-light">Confirm password</label>
+                                            <input type="password" class="form-control rounded-4" placeholder="Confirm password">
+                                        </div>
+                                </div>
+                                <div class="text-end">
+                                <button type="submit"  class="btn btn-outline-light rounded-pill px-4 py-2">Register</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+
+
+
+                <div class="modal fade" id="modalLog">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content col-sm-6">
+                        <div class="modal-header" style="background-color: #06367e;">
+                            <h2 class="text-light" style="font-family: Franklin;">KAMDI  <span  style="font-size:2.5rem; color: #307ff7; font-family:italic;
+                            "><i>RX</i></span></h2>
+                            <button class="btn-close bg-light text-light" type="button" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body " style="background-color: #06367e;">
+                            <form action="" class="rounded-5">
+                                <div class="py-1 px-5">
+                                        <div class="mb-3">
+                                            <label for="" class="form-label text-light">First Name</label>
+                                            <input type="text" class="form-control rounded-4" placeholder="Enter your first name">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="" class="form-label text-light">Last Name</label>
+                                            <input type="text" class="form-control rounded-4" placeholder="Enter your last name">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="" class="form-label text-light">Password</label>
+                                            <input type="password" class="form-control rounded-4" placeholder="Enter your password">
+                                        </div>
+                                </div>
+                                <div class="text-end">
+                                <button type="submit"  class="btn btn-outline-light rounded-pill px-4 py-2">Login</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+
+
+    <div class=" d-flex justify-content-start align-items-center mb-5" id="hero-section">
+        <div class="col-md-6 text-center">
+           <h1 class="text-light" >Welcome to <span class="fw-bold" style="font-family: Franklin;">KAMDI  </span><span class=" fw-bold" style="font-size:3rem; color: #307ff7; font-family:italic;"><i>RX</i></span></h1>
+           <h3>Where Knowledge Heals.</h3>
+           <h5 class="text-light">At Kamdi Rx, we believe every prescription tells a story,and every story deserves care that’s precise, human, and powered by science.</h5>
+        </div>
+    </div>
+
+
+     <div class="container-fluid py-5 mb-5 " id="About">
+        <div class="col-md-10 mx-auto">
+            <div class="row my-3 text-center">
+                <h1 class="fw-bold" style="font-size: 3rem; font-family: Franklin;">About <span class="fw-bold" style="font-size:3.5rem; font-family:italic; color: #307ff7;"><i>Us</i></span></h1>
+            </div>
+
+            <div class="row g-3">
+                    <div class="col-md-6 col-sm-12">
+                        <h3 class="fw-bold" style="font-size: 2.5rem; font-family: Franklin;">Our <span class=" fw-bold" style="font-size:3rem; font-family:italic; color: #307ff7;"><i>Vision</i></span></h3>
+                        <p>To become Africa’s most trusted digital pharmacy brand, known for transforming how people experience healthcare.
+                           Kamdi Rx envisions a future where every individual has access to reliable medical guidance, advanced treatments, and technology-driven wellness,right at their fingertips.</p>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12">
+                    <h3 class="fw-bold" style="font-size: 2.5rem; font-family: Franklin;">Our <span class="fw-bold" style="font-size:3rem; font-family:italic; color: #307ff7;"><i>Mission</i></span></h3>
+                        <p>To make healthcare personal again.
+                           Kamdi Rx is on a mission to simplify access to trusted medical care,where science meets compassion. We aim to deliver accurate solutions, empower health literacy, and bridge the gap between patients and modern pharmacy innovation.
+                        </p>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container py-5 mb-5" id="Services">
+        <div class="row my-5 text-center">
+                  <h1 class="fw-bold" style="font-size: 3rem; font-family: Franklin;">Our <span class="fw-bold" style="font-size:3.5rem; font-family:italic; color: #307ff7;"><i>Services</i></span></h1>
+        </div>
+
+
+        <div class="row pb-5 g-4">
+
+            <div class="col-md-4">
+                <div class="card border-0 shadow " style="background-color: #06367e;">
+                    <img src="Pharm8.jpg" class="img-fluid card-img-top" alt="">
+
+                    <div class="card-body mb-3">
+                        <p class="text-light">Personalized pharmacy support you can trust. Our licensed experts help you understand your prescriptions, manage dosages, and choose the safest medication options for your specific needs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col-md-4">
+                <div class="card border-0 shadow " style="background-color:#06367e;">
+                    <img src="Pharm1.jpg" class="img-fluid card-img-top" alt="">
+
+                    <div class="card-body mb-3">
+                        <p class="text-light">Skip the confusion and get clarity. Through one-on-one digital consultations, we provide science-based guidance on symptoms, treatments, and preventive care,right from your device.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col-md-4">
+                <div class="card border-0 shadow " style="background-color: #06367e;">
+                    <img src="Pharm7.jpg" class="img-fluid card-img-top" alt="">
+
+                    <div class="card-body mb-3">
+                        <p class="text-light">Your health isn’t just about curing illness,it’s about staying ahead of it. Kamdi Rx offers tailored wellness plans, supplement guidance, and lifestyle recommendations to help you live stronger, longer.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+     <div  id="c-t-a" class="call-to-action  d-flex text-light justify-content-end align-items-center p-3">
+         <div class="col-md-5 text-center mb-3">
+            <h2>Smart Health Starts Here.</h2>
+            <p class="mb-4">Kamdi Rx isn’t just a pharmacy,it’s a movement for better living. We connect science, technology, and care to help you heal smarter and live fuller. We blend trusted pharmacy care with modern innovation to deliver medical solutions that work,reliable, accessible, and personalized for you.</p>
+             <button class="btn btn-outline-light rounded-pill ms-5 px-5 py-2" type="submit" data-bs-toggle="modal" data-bs-target="#modalReg">Get started</button>
+        </div>
+        
+
+    </div>
+
+
+ 
+   <div class="container py-5" id="Testimonials">
+         <div class="row my-5 text-center">
+                <h1 class="fw-bold" style="font-size: 3rem; font-family: Franklin;" >Some <span class="fw-bold" style="font-size:3.5rem; font-family:italic; color: #307ff7;"><i>Testimonials</i></span></h1>
+        </div>
+
+        <div class="row">
+           <div class="col-md-6 mx-auto">
+             <div class="card border-0 shadow ">
+                    <div class="carousel slide col-md-12 col-sm-6" id="caro" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#caro" data-bs-slide-to="0" class="active"></button>
+                                    <button type="button" data-bs-target="#caro" data-bs-slide-to="1"></button>
+                                    <button type="button" data-bs-target="#caro" data-bs-slide-to="2"></button>
+                                </div>
+
+                        <div class="carousel-inner">
+                                <div class="carousel-item row g-5 active"  data-bs-interval="3000" style="background-color: #083e8f">
+                                            <div class="col-4 " style="margin-left: 4.6rem;">
+                                                <div class="card-body mx-auto">
+                                                    <img src="team1.jpg" alt="" class="rounded-circle mb-0" width="300px">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-8 mt-1 mx-auto">
+                                                <div class="card-body text-light" style="background-color: #083e8f;">
+                                                    <h3 class="fw-bold">Bruce Banner</h3>
+                                                    <h5>Customer</h5>
+                                                    <p>Working with KAMDI   RX has been a phenominal experience!</p>
+                                                </div>
+                                            </div>
+                               </div>
+
+                                 <div class="carousel-item row g-5"   style="background-color:#083e8f">
+                                            <div class="col-4 " style="margin-left: 4.6rem;">
+                                                <div class="card-body mx-auto">
+                                                    <img src="team2.jpg" alt="" class="rounded-circle mb-0" width="300px">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-8 mt-1 mx-auto">
+                                                <div class="card-body  text-light" style="background-color: #083e8f;">
+                                                    <h3 class="fw-bold">Alexa Hagreeves</h3>
+                                                    <h5>Customer</h5>
+                                                    <p">Efficient, sound, and customer friendly!</p>
+                                                </div>
+                                            </div>
+                                </div>
+
+                                    <div class="carousel-item row g-5 b " style="background-color: #083e8f;">
+                                            <div class="col-4 " style="margin-left: 4.6rem;">
+                                                <div class="card-body mx-auto">
+                                                    <img src="team3.jpg" alt="" class="rounded-circle   mb-0" width="300px">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-8 mt-1 mx-auto">
+                                                <div class="card-body  text-light" style="background-color: #083e8f;">
+                                                    <h3 class="fw-bold">John Doe</h3>
+                                                    <h5>Customer</h5>
+                                                    <p>Why haven't you chosen KAMDI   RX yet?</p>
+                                                </div>
+                                            </div>
+                                </div>          
+                      </div>  
+
+                            <button type="button" class="carousel-control-prev" data-bs-target="#caro" data-bs-slide="prev" style="background-color: #083e8f;">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+
+                            <button type="button" class="carousel-control-next" data-bs-target="#caro" data-bs-slide="next" style="background-color: #083e8f;">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                    </div>
+
+
+                            
+             </div>
+            </div>
+        </div>
+    </div>
+
+
+<div class="container py-5" id="FAQ">
+         <div class="row my-5 text-center">
+                <h1 class="fw-bold" style="font-size: 3rem; font-family: Franklin;" >FAQ <span class="fw-bold" style="font-size:3.5rem; font-family:italic; color: #307ff7;"><i>Section</i></span></h1>
+        </div>
+ <div class="container col-md-11">
+    <div class="accordion accordion-flush mb-5" >
+      <div class="accordion-item" style="background-color: #06367e;">
+    <h2 class="accordion-header">
+      <button
+        class="accordion-button collapsed fw-bold fs-2" style="background-color: #06367e; color: white;"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#flush-collapseOne"
+        aria-expanded="false"
+        aria-controls="flush-collapseOne"
+      >
+            What is KAMDI   Rx about?
+      </button>
+    </h2>
+    <div
+      id="flush-collapseOne"
+      class="accordion-collapse collapse"
+      data-bs-parent="#accordionFlushExample"
+    >
+      <div class="accordion-body text-light">
+       <p>KAMDI   RX is a Pharmaceutical eneteprise tailored to meet the demands of customers worldwide, offering innovative medical solutions for the welfare of humanity. </p>
+      </div>
+    </div>
+  </div>
+
+  <div  class="accordion-item" style="background-color: #06367e;">
+    <h2 class="accordion-header">
+      <button
+          class="accordion-button collapsed fw-bold fs-2" style="background-color: #06367e; color: white;"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#flush-collapseTwo"
+        aria-expanded="false"
+        aria-controls="flush-collapseTwo"
+      >
+        What are the requirments to join?
+      </button>
+    </h2>
+    <div
+      id="flush-collapseTwo"
+      class="accordion-collapse collapse"
+      data-bs-parent="#accordionFlushExample"
+    >
+      <div class="accordion-body text-light">
+       <p>You must be a medical and/or tech-based professional.</p>
+      </div>
+    </div>
+  </div>
+
+  <div  class="accordion-item" style="background-color: #06367e;">
+    <h2 class="accordion-header">
+      <button
+          class="accordion-button collapsed fw-bold fs-2" style="background-color: #06367e; color: white;"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#flush-collapseThree"
+        aria-expanded="false"
+        aria-controls="flush-collapseThree"
+      >
+        When do I start?
+      </button>
+    </h2>
+    <div
+      id="flush-collapseThree"
+      class="accordion-collapse collapse"
+      data-bs-parent="#accordionFlushExample"
+    >
+      <div class="accordion-body text-light">
+        <p>You can start as soon as you have confirmed that you meet all the neccessary criteria required for a spot in the KAMDI   RX crew!</p>
+      </div>
+     </div>
+   </div>
+  </div>
+ </div> 
+</div>
+
+
+
+<div class="container-fluid  py-5" id="Team" style=" background-color:#06367e">
+    <div class="col-md-10 mx-auto">
+
+        <div class="row my-5 text-center">
+                <h1 class="fw-bold" style="font-size: 3rem; font-family: Franklin;" >Team <span class="tfw-bold" style="font-size:3.5rem; font-family:italic; color: #307ff7;"><i>Members</i></span></h1>
+        </div>
+
+            <div class="row g-4  col-sm-12 justify-content-center no-repeat">
+                    <div class="col-md-3 ">
+                        <div class="card h-100 border-0 shadow p-4 rounded bg-light text-dark">
+                            <img src="team3.jpg" alt="" class="img-fluid card-img-top rounded-circle" width="90px" height="90px">
+                            <div class="card-body text-center">
+                                <h3 class="text-primary">Bob Builder</h3>
+                                <h4>CMO</h4>
+                                <p>
+                                Bob, our lead marketing strategist in charge of ptomotions and collaborations.
+                                </p>
+                                <p>
+                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                    <a href=""><i class="bi bi-facebook"></i></a>
+                                    <a href=""><i class="bi bi-snapchat"></i></a>
+                                    <a href=""><i class="bi bi-linkedin"></i></a>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 ">
+                        <div class="card h-100 border-0 shadow p-4 rounded bg-light text-dark">
+                            <img src="team2.jpg" alt="" class="img-fluid card-img-top rounded-circle" width="90px" height="90px">
+                            <div class="card-body text-center">
+                                <h3 class="text-primary">Marie Curie</h3>
+                                <h4>CFO</h4>
+                                <p>
+                                Marie is in charge of all financial matters in Kamdi Rx.
+                                </p>
+                                <p>
+                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                    <a href=""><i class="bi bi-facebook"></i></a>
+                                    <a href=""><i class="bi bi-snapchat"></i></a>
+                                    <a href=""><i class="bi bi-linkedin"></i></a>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 ">
+                        <div class="card h-100 border-0 shadow p-4 rounded bg-light text-dark">
+                            <img src="team1.jpg" alt="" class="img-fluid card-img-top rounded-circle" width="90px" height="90px">
+                            <div class="card-body text-center">
+                                <h3 class="text-primary">Mark Hanon</h3>
+                                <h4>COO</h4>
+                                <p>
+                                The face behind all operations concerninc Kamdi Rx.
+                                </p>
+                                <p>
+                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                    <a href=""><i class="bi bi-facebook"></i></a>
+                                    <a href=""><i class="bi bi-snapchat"></i></a>
+                                    <a href=""><i class="bi bi-linkedin"></i></a>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 ">
+                        <div class="card h-100 border-0 shadow p-4 rounded bg-light text-dark">
+                            <img src="team4.jpg" alt="" class="img-fluid card-img-top rounded-circle" width="50px" height="50px">
+                            <div class="card-body text-center">
+                                <h3 class="text-primary">Bonnie Jazz</h3>
+                                <h4>Lawyer</h4>
+                                <p>
+                                Bonnie Esq. is our head of legal affairs, lawyer, and PCN moderator.
+                                </p>
+                                <p class="fw-bold text-danger">
+                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                    <a href=""><i class="bi bi-facebook"></i></a>
+                                    <a href=""><i class="bi bi-snapchat"></i></a>
+                                    <a href=""><i class="bi bi-linkedin"></i></a>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
+
+
+            </div>
+    </div>
+</div>
+
+
+<div class="container py-5" id="Contact">
+    <div class="row text-center my-5">
+       <h1 class="fw-bold" style="font-size: 3rem; font-family: Franklin;" >Contact <span class="fw-bold" style="font-size:3.5rem; color: #307ff7; font-family:italic;"><i>Us</i></span></h1>
+    </div>
+    <div class="col-4 border-0 mx-auto"></div>
+
+
+    <div class="row mb-5">
+        <div class="col-md-10 mx-auto shadow rounded-3 p-5" style="background-color: #083e8f;">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-0">Address:</h5>
+                    <p>F.C.T, Abuja.</p>
+
+                    <h5 class="fw-bold mb-0">Email:</h5>
+                    <p>KamdiRX@gmail.com</p>
+
+                    <h5 class="fw-bold mb-0">Contact:</h5>
+                    <p>+2349068441111</p>
+
+                </div>
+
+
+                <div class="col-md-8">
+                    <form action="" class=" text-light" style="background-color: #083e8f">
+                        <div class="row mb-4">
+                            <div class="col">
+                                <input type="text" placeholder="First Name" class="form-control">
+                            </div>
+
+                            <div class="col">
+                                <input type="text" placeholder="Last Name" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+
+                        <textarea name="" id="" class="form-control mb-4" rows="5" placeholder="Enter your message"></textarea>
+
+                        <div class="text-end">
+                            <button type="submit" class="rounded btn btn-outline-light rounded-5 py-2 px-4">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<div class="container-fluid " style="background-color: #06367e;">
+    <div class="col-md-11 mx-auto">
+        <div class="row mt-3 py-4 g-4">
+            <div class="col-md-3">
+                <a href="" class="navbar-brand fs-2 text-light" style="font-family:Franklin;">KAMDI  <span class="" style="font-size:2.5rem; font-family:italic; color: #307ff7;"><i>RX</i></span></h2></a>
+                <h5 class="fw-bold mb-0">Address:</h5>
+                    <p>F.C.T, Abuja.</p>
+
+                    <h5 class="fw-bold mb-0">Email:</h5>
+                    <p>KamdiRX@gmail.com.</p>
+
+                    <h5 class="fw-bold mb-0">Contact:</h5>
+                    <p>+2349068441111</p>
+
+            </div>
+
+            <div class="col-md-3">
+                <h4 class="mt-3" style="color: #307ff7;">Useful Links</h4>
+
+                <p>
+                    <a href="#hero-section" class="text-decoration-none text-light">Home</a>
+                </p>
+
+                <p>
+                    <a href="#About" class="text-decoration-none text-light">About Us</a>
+                </p>
+
+                <p>
+                    <a href="#Services" class="text-decoration-none text-light" >Our services</a>
+                </p>
+
+                <p>
+                    <a href="#Testimonials" class="text-decoration-none text-light" >Testimonial</a>
+                </p>
+
+                <p>
+                    <a href="#FAQ" class="text-decoration-none text-light" >FAQ</a>
+                </p>
+
+                <p>
+                    <a href="#Team" class="text-decoration-none text-light" >Team</a>
+                </p>
+
+                <p>
+                    <a href="#Contact" class="text-decoration-none text-light" >Contact</a>
+                </p>
+
+
+            </div>
+
+
+            <div class="col-md-3">
+                <h4 class="mt-3" style="color: #307ff7;">Our Services</h4>
+
+                <p>
+                    <a href="#Home" class="text-decoration-none text-light">Web Design</a>
+                </p>
+
+                <p>
+                    <a href="#About" class="text-decoration-none text-light">Programming</a>
+                </p>
+
+                <p>
+                    <a href="#Services" class="text-decoration-none text-light" >Web Development</a>
+                </p>
+
+                <p>
+                    <a href="#Testimonials" class="text-decoration-none text-light" >Digital Marketing</a>
+                </p>
+
+                <p>
+                    <a href="#FAQ" class="text-decoration-none text-light" >Graphic design</a>
+                </p>
+
+                
+
+            </div>
+
+
+
+            <div class="col-md-3">
+                <h4 class=" mt-3" style="color: #307ff7;">Social Media</h4>
+
+                <p>
+                    <a href="https://wa.me/2349068441111" target="_blank" class="text-decoration-none text-light">Whatsapp</a>
+                </p>
+
+                <p>
+                    <a href="https://www.instagram.com/kamdionyekwelu?igsh=YWFiOGlwYnlkamRw" target="_blank" class="text-decoration-none text-light">Instagram</a>
+                </p>
+
+                <p>
+                    <a href="https://www.facebook.com/PharmSavvyKamdi" target="_blank" class="text-decoration-none text-light" >Facebook</a>
+                </p>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="row text-center">
+            <p>
+                @Copyright <span class="fw-bold">KamdiRX </span>All Rights Reserved.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+    
+
+    
+
+ 
+
+
+
+
+
+    
+
+
+
+
+
+  
+        
+</body>
+
+
+
+
+    
+    
+
+
+
